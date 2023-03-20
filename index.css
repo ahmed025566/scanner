@@ -1,0 +1,41 @@
+body {
+    color: #ffe;
+    background-color: #000;
+}
+h1 {
+    margin: 50px 0px 30px 40%;
+    color: skyblue;
+}
+.Percentage {
+    width: 400px;
+    height: 50px;
+    margin: 20px 33%;
+    border: 2px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: skyblue;
+    font-size: 25px;
+    font-weight: 700;
+}
+.volume {
+    width: 400px;
+    height: 50px;
+    margin: 20px 33%;
+    border: 2px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: skyblue;
+    font-size: 25px;
+    font-weight: 700;
+}
+.get {
+margin-left: 32%;
+height: 40px;
+font-size: 25px;
+border-radius: 6px;
+color: skyblue;
+border: 2px solid white;
+background-color: #000;
+}

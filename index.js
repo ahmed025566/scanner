@@ -23,14 +23,15 @@ function displayVolume() {
 }
 const resP = displayPercenteage();
 const resV = displayVolume();
-
-get.onclick = () => {
-  Percentage.innerHTML = "";
-  const per = document.createElement("p");
-  per.append(document.createTextNode("Requried Percentage is " + resP + "%"));
-  Percentage.append(per);
-  volume.innerHTML = '';
-  const v = document.createElement('p');
-  v.append(document.createTextNode("Requried Volume is " + resV + "$$"))
-  volume.append(v)
-};
+const display = () => {
+    Percentage.innerHTML = "";
+    const per = document.createElement("p");
+    per.append(document.createTextNode("Requried Percentage is " + resP + "%"));
+    Percentage.append(per);
+    volume.innerHTML = '';
+    const v = document.createElement('p');
+    v.append(document.createTextNode("Requried Volume is " + resV + "$$"))
+    volume.append(v)
+}
+get.onclick = display();
+document.onload = display();

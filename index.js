@@ -2,7 +2,8 @@ const Percentage = document.querySelector(".Percentage");
 const volume = document.querySelector(".volume");
 const get = document.querySelector(".get");
 function displayPercenteage() {
-  dt1 = new Date("March 20, 2023 15:30:00");
+  const today = new Date().getDate();
+  dt1 = new Date(`March ${today}, 2023 15:30:00`);
   dt2 = new Date();
   var diff = (dt2.getTime() - dt1.getTime()) / 1000;
   diff /= 60;
@@ -12,7 +13,9 @@ function displayPercenteage() {
   return checkPercentage;
 }
 function displayVolume() {
-  dt1 = new Date("March 20, 2023 15:30:00");
+  const today = new Date().getDate();
+
+  dt1 = new Date(`March ${today}, 2023 15:30:00`);
   dt2 = new Date();
   var diff = (dt2.getTime() - dt1.getTime()) / 1000;
   diff /= 60;
@@ -33,5 +36,9 @@ const display = () => {
     v.append(document.createTextNode("Requried Volume is " + resV + "$$"))
     volume.append(v)
 }
-get.onclick = display();
+
 document.onload = display();
+get.addEventListener('click', () => {
+  display();
+  
+})

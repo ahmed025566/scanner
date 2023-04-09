@@ -3,7 +3,8 @@ const volume = document.querySelector(".volume");
 const get = document.querySelector(".get");
 function displayPercenteage() {
   const today = new Date().getDate();
-  dt1 = new Date(`April ${today}, 2023 15:30:00`);
+  const month = new Date().getMonth()+1;
+  dt1 = new Date(`${month} ${today}, 2023 15:30:00`);
   dt2 = new Date();
   var diff = (dt2.getTime() - dt1.getTime()) / 1000;
   diff /= 60;
@@ -14,8 +15,8 @@ function displayPercenteage() {
 }
 function displayVolume() {
   const today = new Date().getDate();
-
-  dt1 = new Date(`April ${today}, 2023 15:30:00`);
+  const month = new Date().getMonth()+1;
+  dt1 = new Date(`${month} ${today}, 2023 15:30:00`);
   dt2 = new Date();
   var diff = (dt2.getTime() - dt1.getTime()) / 1000;
   diff /= 60;

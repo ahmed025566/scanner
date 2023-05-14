@@ -22,7 +22,7 @@ function displayVolume() {
   diff /= 60;
   const tim = Math.abs(Math.round(diff));
 
-  const checkVolume = (tim * (1000000 / 390)).toFixed(0);
+  const checkVolume = (tim * (4000000 / 390)).toFixed(0);
   return checkVolume;
 }
 const resP = displayPercenteage();
